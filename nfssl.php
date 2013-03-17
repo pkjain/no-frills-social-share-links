@@ -44,14 +44,6 @@ function nfssl_the_content_filter ($content) {
   $img = "/img/Reddit-18.png";
   $share_html .= " <a title='$title' href='$link' target='_blank'><img src='$img' alt='$title' /></a>";
 
-  // delicious
-  /*
-  $link = "http://del.icio.us/post?url=$posturl" . "&amp;title=$posttitle";
-  $title = "share on delicious";
-  $img = "/img/Delicious-18.png";
-  $share_html .= " <a title='$title' href='$link'><img src='$img' alt='$title' /></a>";
-  */
-
   // stumbleupon
   $link = "http://www.stumbleupon.com/submit?url=$posturl";
   $title = "share on stumbleupon";
