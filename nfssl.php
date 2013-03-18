@@ -54,7 +54,13 @@ function nfssl_the_content_filter ($content) {
   $link = "http://digg.com/submit?url=$posturl" . "&title=$posttitle";
   $title = "share on digg";
   $img = "/img/Digg_Shiny_Icon-18.png";
-  $share_html .= " <a title='$title' href='$link'><img src='$img' alt='$title' target='_blank' /></a>";
+  $share_html .= " <a title='$title' href='$link' target='_blank'><img src='$img' alt='$title' /></a>";
+
+  // Diigo
+  $link = "https://www.diigo.com/post?url=$posturl" . "&title=$posttitle";
+  $title = "share on diigo";
+  $img = "/img/Diigo-18.png";
+  $share_html .= " <a title='$title' href='$link' target='_blank'><img src='$img' alt='$title' /></a>";
 
   $share_html .= "</div>\n";
   $content .= $share_html;
