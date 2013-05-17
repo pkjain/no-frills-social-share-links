@@ -12,7 +12,7 @@ Version: 1.0
 function nfssl_the_content_filter ($content) {
   $posturl = urlencode(get_permalink());
   $posttitle = urlencode(html_entity_decode(get_the_title(), ENT_COMPAT, 'UTF-8'));
-  $share_html = "<div class='nfssl'>Share: ";
+  $share_html = "<div class='nfssl'>Share this article: ";
 
   // G+
   $link = "https://plus.google.com/share?url=$posturl";
