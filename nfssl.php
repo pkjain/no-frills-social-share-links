@@ -41,7 +41,6 @@ function nfssl_the_content_filter ($content) {
   $img = "/img/Twitter-18.png";
   $share_html .= " <a title='$title' href='$link' target='_blank'><img src='$img' alt='$title' /></a>";
 
-/*
   // reddit
   $link = "http://www.reddit.com/submit?url=$posturl" . "&title=$posttitle";
   $title = "submit to reddit";
@@ -65,7 +64,6 @@ function nfssl_the_content_filter ($content) {
   $title = "share on diigo";
   $img = "/img/Diigo-18.png";
   $share_html .= " <a title='$title' href='$link' target='_blank'><img src='$img' alt='$title' /></a>";
-*/
 
   $share_html .= "</div>\n";
   $content .= $share_html;
